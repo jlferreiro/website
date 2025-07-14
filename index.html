@@ -15,12 +15,16 @@
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
-<!-- HERO IMAGE -->
-<section class="relative bg-cover bg-center h-screen" style="background-image: url('assets/SecDevOpsHero.png');">
+<!-- VIDEO -->
+<section class="relative h-screen overflow-hidden">
+  <video autoplay muted loop class="absolute w-auto min-w-full min-h-full max-w-none">
+    <source src="assets/TechBackground.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
   <div class="absolute inset-0 bg-black opacity-60"></div>
   <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-    <h1 class="text-5xl font-bold mb-4 fade-in">JLF LLC</h1>
-    <p class="text-xl mb-6 fade-in">Cloud, DevOps & IT Infrastructure Experts</p>
+    <h1 class="text-7xl font-bold mb-6 fade-in">JLF LLC</h1>
+    <p class="text-2xl mb-8 fade-in">Cloud, DevOps & IT Infrastructure Experts</p>
     <a href="#services" class="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded text-lg fade-in">Explore Our Services</a>
   </div>
 </section>
@@ -31,25 +35,25 @@
   <div class="grid md:grid-cols-2 gap-8">
 
     <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition">
-      <img src="assets/cloud.jpeg" class="mb-4 mx-auto"/>
+      <img src="assets/cloud.jpeg" alt="Cloud & DevOps" class="mb-4 mx-auto h-32"/>
       <h3 class="text-2xl font-semibold mb-3 text-center">Cloud & DevOps</h3>
       <p class="text-center">Cloud strategy, infrastructure automation, CI/CD pipelines, and Kubernetes with AWS, Azure, and GCP.</p>
     </div>
 
     <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition">
-      <img src="assets/linux.png" class="mb-4 mx-auto"/>
+      <img src="assets/linux.png" alt="Linux Administration" class="mb-4 mx-auto h-32"/>
       <h3 class="text-2xl font-semibold mb-3 text-center">Linux Administration</h3>
       <p class="text-center">Red Hat, Ubuntu, CentOS, and SUSE system management for stable, secure, and optimized environments.</p>
     </div>
 
     <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition">
-      <img src="assets/agile.png" class="mb-4 mx-auto"/>
+      <img src="assets/agile.png" alt="Agile Project Management" class="mb-4 mx-auto h-32"/>
       <h3 class="text-2xl font-semibold mb-3 text-center">Agile Project Management</h3>
       <p class="text-center">Scrum Masters and PMs driving agile transformations and software delivery success stories.</p>
     </div>
 
     <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition">
-      <img src="assets/tests.png" class="mb-4 mx-auto"/>
+      <img src="assets/tests.png" alt="QA & Testing" class="mb-4 mx-auto h-32"/>
       <h3 class="text-2xl font-semibold mb-3 text-center">QA & Testing</h3>
       <p class="text-center">Full-cycle manual and automated testing to ensure software reliability and performance.</p>
     </div>
