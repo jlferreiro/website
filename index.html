@@ -3,65 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JLF LLC - DevOps & Cloud Consulting</title>
+  <title>JLF LLC - Cloud & DevOps Services</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in { animation: fadeIn 1.5s ease-in; }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body class="bg-gray-900 text-white font-sans">
 
-  <!-- HEADER -->
-  <header class="bg-gray-800 p-6 shadow">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-3xl font-bold">JLF LLC</h1>
-      <a href="#contact" class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded text-sm">Let's Talk</a>
+<!-- HERO IMAGE -->
+<section class="relative bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');">
+  <div class="absolute inset-0 bg-black opacity-60"></div>
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+    <h1 class="text-5xl font-bold mb-4 fade-in">JLF LLC</h1>
+    <p class="text-xl mb-6 fade-in">Cloud, DevOps & IT Infrastructure Experts</p>
+    <a href="#services" class="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded text-lg fade-in">Explore Our Services</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="max-w-7xl mx-auto py-20 px-6 fade-in">
+  <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/cloud.png" class="mb-4 mx-auto"/>
+      <h3 class="text-2xl font-semibold mb-3 text-center">Cloud & DevOps</h3>
+      <p class="text-center">Cloud strategy, infrastructure automation, CI/CD pipelines, and Kubernetes with AWS, Azure, and GCP.</p>
     </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="max-w-7xl mx-auto text-center py-20 px-4">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4">Empowering Your Cloud, DevOps & IT Infrastructure</h2>
-    <p class="text-lg text-gray-300 mb-8">Expert consulting in AWS, Azure, GCP, Linux Systems, Agile Project Management, and QA Testing. Elevate your digital operations with our proven expertise.</p>
-    <a href="#services" class="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded text-lg">Explore Our Services</a>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="max-w-6xl mx-auto py-16 px-4">
-    <h3 class="text-3xl font-bold mb-10 text-center">Our Core Services</h3>
-    <div class="grid md:grid-cols-2 gap-8">
-      
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h4 class="text-2xl font-semibold mb-3">DevOps & Cloud Solutions</h4>
-        <p>Architecture and automation for AWS, Azure, and GCP. We design scalable, secure, and cost-optimized cloud environments using tools like Terraform, Ansible, and Kubernetes.</p>
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h4 class="text-2xl font-semibold mb-3">Linux Systems Administration</h4>
-        <p>Certified expertise in Red Hat, Ubuntu, SUSE, CentOS. We ensure secure, reliable, and high-performance infrastructure management across your entire IT landscape.</p>
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h4 class="text-2xl font-semibold mb-3">Agile Project Management</h4>
-        <p>Experienced Project Managers and Scrum Masters to guide your software development lifecycle with agility, ensuring on-time and within-budget delivery.</p>
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h4 class="text-2xl font-semibold mb-3">QA & Software Testing</h4>
-        <p>Comprehensive manual and automated testing solutions to guarantee your applications' functionality, security, and scalability under any condition.</p>
-      </div>
-
+    <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/linux.png" class="mb-4 mx-auto"/>
+      <h3 class="text-2xl font-semibold mb-3 text-center">Linux Administration</h3>
+      <p class="text-center">Red Hat, Ubuntu, CentOS, and SUSE system management for stable, secure, and optimized environments.</p>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="bg-gray-800 py-16 text-center">
-    <h3 class="text-3xl font-bold mb-6">Let's Work Together</h3>
-    <p class="mb-6 text-gray-300">Contact us to discuss your cloud, DevOps, or IT infrastructure challenges. We're ready to partner with you on your next digital transformation.</p>
-    <a href="mailto:contact@jlfllc.com" class="bg-blue-600 hover:bg-blue-500 px-8 py-3 rounded text-lg">Contact Us: contact@jlfllc.com</a>
-  </section>
+    <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/scrum.png" class="mb-4 mx-auto"/>
+      <h3 class="text-2xl font-semibold mb-3 text-center">Agile Project Management</h3>
+      <p class="text-center">Scrum Masters and PMs driving agile transformations and software delivery success stories.</p>
+    </div>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-center text-gray-500 text-sm py-6 border-t border-gray-700">
-    © 2025 JLF LLC. All rights reserved.
-  </footer>
+    <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/test-passed.png" class="mb-4 mx-auto"/>
+      <h3 class="text-2xl font-semibold mb-3 text-center">QA & Testing</h3>
+      <p class="text-center">Full-cycle manual and automated testing to ensure software reliability and performance.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-gray-800 py-20 text-center fade-in">
+  <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+  <p class="mb-6">Get in touch to discuss your cloud or IT challenges. We're here to help.</p>
+  <a href="mailto:contact@jlfllc.com" class="bg-blue-600 hover:bg-blue-500 px-8 py-3 rounded text-lg">Contact Us: contact@jlfllc.com</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-center text-gray-500 text-sm py-6 border-t border-gray-700">
+  © 2025 JLF LLC. All rights reserved.
+</footer>
 
 </body>
 </html>
