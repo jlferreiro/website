@@ -1,0 +1,31 @@
+body {
+  background-color: #0b1220;
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+  backdrop-filter: blur(16px);
+  background: rgba(11,18,32,0.75);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.nav-link {
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #3b82f6;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
