@@ -3,167 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JLF LLC | Cloud & DevOps Consulting</title>
+<title>JEvolution | Digital Evolution</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    font-family: 'Inter', sans-serif;
-  }
-
-  /* Animated gradient background */
-  .gradient-bg {
-    background: linear-gradient(-45deg, #0f172a, #1e293b, #0ea5e9, #6366f1);
-    background-size: 400% 400%;
-    animation: gradientMove 15s ease infinite;
-  }
-
-  @keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  /* Scroll animation */
-  .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
-  }
-
-  .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
+<link rel="stylesheet" href="/website/assets/css/style.css">
 </head>
 
-<body class="bg-white text-gray-800">
+<body>
 
-<!-- HERO -->
-<section class="gradient-bg text-white min-h-screen flex items-center">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<!-- NAVBAR -->
+<header class="navbar fixed w-full z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
     
-    <div>
-      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-        Cloud & DevOps <br> Strategic Consulting
-      </h1>
-      <p class="text-lg mb-8 text-gray-200">
-        We design, modernize and scale cloud infrastructures for high-performance teams.
-        Enterprise-grade DevOps, automation and agile transformation.
-      </p>
-      <div class="flex gap-4">
-        <a href="#services" class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
-          Explore Services
-        </a>
-        <a href="#contact" class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition">
-          Contact Us
-        </a>
-      </div>
-    </div>
-
-    <div class="hidden md:block">
-      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000" 
-           class="rounded-xl shadow-2xl" alt="Tech Infrastructure">
-    </div>
-
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="py-24 bg-gray-50 reveal">
-  <div class="max-w-5xl mx-auto text-center px-6">
-    <h2 class="text-4xl font-bold mb-6">Technology That Drives Business</h2>
-    <p class="text-lg text-gray-600 leading-relaxed">
-      JLF LLC is a US-based technology consulting firm founded by professionals 
-      with 20+ years of experience delivering enterprise cloud and infrastructure solutions.
-      We partner with organizations to accelerate innovation, optimize operations, 
-      and build resilient digital ecosystems.
-    </p>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="py-24 reveal">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-16">Core Services</h2>
-
-    <div class="grid md:grid-cols-2 gap-10">
-
-      <div class="p-8 rounded-2xl border hover:shadow-xl transition">
-        <h3 class="text-2xl font-semibold mb-4">Cloud & DevOps</h3>
-        <p class="text-gray-600">
-          Cloud architecture, infrastructure as code, CI/CD pipelines, Kubernetes 
-          and multi-cloud strategies across AWS, Azure and GCP.
-        </p>
-      </div>
-
-      <div class="p-8 rounded-2xl border hover:shadow-xl transition">
-        <h3 class="text-2xl font-semibold mb-4">Linux & Infrastructure</h3>
-        <p class="text-gray-600">
-          Enterprise Linux administration, high-availability environments, 
-          system hardening and performance optimization.
-        </p>
-      </div>
-
-      <div class="p-8 rounded-2xl border hover:shadow-xl transition">
-        <h3 class="text-2xl font-semibold mb-4">Agile Transformation</h3>
-        <p class="text-gray-600">
-          Scrum Masters and agile leadership driving scalable product delivery 
-          and operational excellence.
-        </p>
-      </div>
-
-      <div class="p-8 rounded-2xl border hover:shadow-xl transition">
-        <h3 class="text-2xl font-semibold mb-4">QA & Automation</h3>
-        <p class="text-gray-600">
-          Manual and automated testing frameworks ensuring reliability, 
-          scalability and quality assurance at scale.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT CTA -->
-<section id="contact" class="bg-black text-white py-24 reveal">
-  <div class="max-w-4xl mx-auto text-center px-6">
-    <h2 class="text-4xl font-bold mb-6">Let’s Build Your Next Infrastructure</h2>
-    <p class="text-gray-300 mb-8">
-      Ready to modernize your cloud and DevOps strategy?
-    </p>
-    <a href="mailto:jlfcajval@gmail.com"
-       class="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-200 transition">
-      Start a Conversation
+    <a href="index.html" class="text-2xl font-bold tracking-wide">
+      JEvolution
     </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm uppercase tracking-wider">
+
+      <div class="relative dropdown">
+        <button class="nav-link">Services</button>
+        <div class="dropdown-menu absolute mt-4 bg-[#0f172a] rounded-lg shadow-lg p-6 w-64">
+          <a href="services/cloud-devops.html" class="block mb-3 hover:text-blue-400">Cloud & DevOps</a>
+          <a href="services/infrastructure.html" class="block mb-3 hover:text-blue-400">Infrastructure Engineering</a>
+          <a href="services/agile-transformation.html" class="block mb-3 hover:text-blue-400">Agile Transformation</a>
+          <a href="services/qa-automation.html" class="block hover:text-blue-400">QA & Automation</a>
+          <a href="/website/services/technical-interview-assessment.html" class="block hover:text-blue-400">Technical Talent Evaluation</a>
+        </div>
+      </div>
+
+      <a href="work.html" class="nav-link">Our Work</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+
+      <a href="contact.html" 
+         class="bg-blue-600 px-5 py-2 rounded hover:bg-blue-500 transition">
+         Let's Talk
+      </a>
+
+    </nav>
+  </div>
+</header>
+
+<!-- HERO PLACEHOLDER -->
+<section class="min-h-screen flex items-center justify-center text-center px-6 pt-24">
+  <div>
+    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+      Cloud. DevOps. Digital Evolution.
+    </h1>
+    <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+      Enterprise-grade consulting for organizations ready to scale and modernize.
+    </p>
   </div>
 </section>
-
-<!-- FOOTER -->
-<footer class="bg-gray-100 text-center py-8 text-gray-500 text-sm">
-  © 2026 JLF LLC. All rights reserved.
-</footer>
-
-<script>
-  const reveals = document.querySelectorAll(".reveal");
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add("active");
-      }
-    });
-  }, { threshold: 0.1 });
-
-  reveals.forEach(reveal => observer.observe(reveal));
-</script>
 
 </body>
 </html>
