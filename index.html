@@ -1,82 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cloud & DevOps Consulting</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .fade-in {
-      animation: fadeIn 2s ease-in forwards;
-      opacity: 0;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-  </style>
-</head>
-<body class="text-white bg-gray-900">
+<section id="services" class="max-w-7xl mx-auto py-20 px-6 fade-in">
+  <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
 
-  <!-- VIDEO HERO -->
-  <section class="relative h-screen overflow-hidden">
-    <video autoplay muted loop class="absolute w-auto min-w-full min-h-full max-w-none">
-      <source src="assets/TechBackground.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="absolute inset-0 bg-black opacity-70"></div>
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-      <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">Cloud, DevOps & IT Infrastructure Experts</h1>
-      <p class="text-xl md:text-2xl mb-8 fade-in">
-        Empowering Digital Infrastructure & Innovation<br/>
-        We are a U.S.-based company specializing in modern cloud services, infrastructure, and agile methodologies.
-      </p>
-      <a href="#about" class="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded text-lg fade-in">
-        Explore Our Services
-      </a>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- Cloud & DevOps -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition text-center">
+      <img src="assets/cloud.png" alt="Cloud & DevOps" class="mx-auto h-24 mb-4">
+      <h3 class="text-2xl font-semibold mb-3">Cloud & DevOps</h3>
+      <p>We design scalable cloud architectures and DevOps automation pipelines that accelerate deployments and increase operational reliability.</p>
     </div>
-  </section>
 
-  <!-- WHO WE ARE -->
-  <section id="about" class="py-20 bg-gray-800 text-center px-4 md:px-20">
-    <h2 class="text-4xl font-bold mb-6">Our Purpose & Identity</h2>
-    <p class="text-lg max-w-4xl mx-auto">
-      We exist to drive businesses forward through cutting-edge cloud infrastructure, automation, and DevOps strategies.
-      With a team of industry experts, we bridge technology and strategy to empower innovation and performance.
-    </p>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="py-20 bg-gray-900 text-center px-4 md:px-20">
-    <h2 class="text-4xl font-bold mb-10">What We Offer</h2>
-    <div class="grid gap-8 md:grid-cols-3">
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-2xl font-semibold mb-4">Cloud Strategy</h3>
-        <p>Architecture, migration and multi-cloud governance tailored to your business needs.</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-2xl font-semibold mb-4">DevOps Engineering</h3>
-        <p>CI/CD, automation, infrastructure as code and environment standardization.</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-2xl font-semibold mb-4">Managed Services</h3>
-        <p>Monitoring, logging, support and infrastructure optimization 24/7.</p>
-      </div>
+    <!-- Infrastructure -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition text-center">
+      <img src="assets/linux.png" alt="Infrastructure" class="mx-auto h-24 mb-4">
+      <h3 class="text-2xl font-semibold mb-3">Infrastructure</h3>
+      <p>We build and optimize secure, resilient infrastructure across cloud and hybrid environments using automation and infrastructure-as-code.</p>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="py-20 bg-gray-800 text-center px-4 md:px-20">
-    <h2 class="text-4xl font-bold mb-6">Let’s Work Together</h2>
-    <p class="mb-8 text-lg max-w-3xl mx-auto">Ready to accelerate your infrastructure? Contact us today and we’ll craft a tailored solution that scales with your vision.</p>
-    <a href="mailto:contact@yourdomain.com" class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded text-lg">Contact Us</a>
-  </section>
+    <!-- QA & Testing -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition text-center">
+      <img src="assets/test.png" alt="QA & Testing" class="mx-auto h-24 mb-4">
+      <h3 class="text-2xl font-semibold mb-3">QA & Testing</h3>
+      <p>Automated and manual testing frameworks to ensure performance, reliability and security before production release.</p>
+    </div>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 py-6 text-center text-sm text-gray-400">
-    © 2025 Cloud & DevOps Experts · All rights reserved.
-  </footer>
+    <!-- Agile Transformation -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition text-center">
+      <img src="assets/project.png" alt="Agile Transformation" class="mx-auto h-24 mb-4">
+      <h3 class="text-2xl font-semibold mb-3">Agile Transformation</h3>
+      <p>We guide organizations through agile adoption, improving collaboration, delivery speed and measurable business outcomes.</p>
+    </div>
 
-</body>
-</html>
+    <!-- Staff Augmentation -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition text-center">
+      <img src="assets/SecDevOpsHero.png" alt="Staff Augmentation" class="mx-auto h-24 mb-4">
+      <h3 class="text-2xl font-semibold mb-3">Staff Augmentation</h3>
+      <p>On-demand senior engineers and technical specialists to strengthen your team and accelerate project execution.</p>
+    </div>
+
+    <!-- Technical Interview & Skill Validation Services -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transform transition text-center">
+      <img src="assets/cloud.png" alt="Technical Interview & Skill Validation" class="mx-auto h-24 mb-4">
+      <h3 class="text-2xl font-semibold mb-3">Technical Interview & Skill Validation Services</h3>
+      <p>Structured technical interview support and real-world skill validation for companies and recruiters. Assessments available in English, Spanish and Portuguese.</p>
+    </div>
+    
+  </div>
+</section>
+
