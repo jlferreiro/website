@@ -1,64 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JEvolution</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloud & DevOps Consulting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      animation: fadeIn 2s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
-<body>
+<body class="text-white bg-gray-900">
 
-<header class="navbar">
-  <div class="container">
-    <a href="index.html" class="logo">JEvolution</a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="work.html">Our Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <h1>Cloud. DevOps.<br><span>Digital Evolution.</span></h1>
-    <p>Enterprise consulting for scalable infrastructure and modern software delivery.</p>
-    <a href="contact.html" class="btn">Start Your Transformation</a>
-  </div>
-</section>
-
-<section class="section dark">
-  <div class="container">
-    <h2>Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3><a href="services/cloud-devops.html">Cloud & DevOps</a></h3>
-        <p>Infrastructure as Code, CI/CD, Kubernetes and cloud architecture.</p>
-      </div>
-      <div class="card">
-        <h3><a href="services/infrastructure.html">Infrastructure Engineering</a></h3>
-        <p>Enterprise Linux, HA systems and performance optimization.</p>
-      </div>
-      <div class="card">
-        <h3><a href="services/agile-transformation.html">Agile Transformation</a></h3>
-        <p>Scrum leadership and DevOps culture enablement.</p>
-      </div>
-      <div class="card">
-        <h3><a href="services/qa-automation.html">QA & Automation</a></h3>
-        <p>Manual and automated testing frameworks and quality assurance.</p>
-      </div>
-      <div class="card">
-        <h3><a href="services/technical-evaluation.html">Technical Talent Evaluation</a></h3>
-        <p>Structured technical interviews with detailed hiring reports in English or Spanish.</p>
-      </div>  
+  <!-- VIDEO HERO -->
+  <section class="relative h-screen overflow-hidden">
+    <video autoplay muted loop class="absolute w-auto min-w-full min-h-full max-w-none">
+      <source src="assets/TechBackground.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-black opacity-70"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">Cloud, DevOps & IT Infrastructure Experts</h1>
+      <p class="text-xl md:text-2xl mb-8 fade-in">
+        Empowering Digital Infrastructure & Innovation<br/>
+        We are a U.S.-based company specializing in modern cloud services, infrastructure, and agile methodologies.
+      </p>
+      <a href="#about" class="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded text-lg fade-in">
+        Explore Our Services
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-© 2026 JLF LLC. All rights reserved.
-</footer>
+  <!-- WHO WE ARE -->
+  <section id="about" class="py-20 bg-gray-800 text-center px-4 md:px-20">
+    <h2 class="text-4xl font-bold mb-6">Our Purpose & Identity</h2>
+    <p class="text-lg max-w-4xl mx-auto">
+      We exist to drive businesses forward through cutting-edge cloud infrastructure, automation, and DevOps strategies.
+      With a team of industry experts, we bridge technology and strategy to empower innovation and performance.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 bg-gray-900 text-center px-4 md:px-20">
+    <h2 class="text-4xl font-bold mb-10">What We Offer</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-4">Cloud Strategy</h3>
+        <p>Architecture, migration and multi-cloud governance tailored to your business needs.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-4">DevOps Engineering</h3>
+        <p>CI/CD, automation, infrastructure as code and environment standardization.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-4">Managed Services</h3>
+        <p>Monitoring, logging, support and infrastructure optimization 24/7.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-gray-800 text-center px-4 md:px-20">
+    <h2 class="text-4xl font-bold mb-6">Let’s Work Together</h2>
+    <p class="mb-8 text-lg max-w-3xl mx-auto">Ready to accelerate your infrastructure? Contact us today and we’ll craft a tailored solution that scales with your vision.</p>
+    <a href="mailto:contact@yourdomain.com" class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded text-lg">Contact Us</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 py-6 text-center text-sm text-gray-400">
+    © 2025 Cloud & DevOps Experts · All rights reserved.
+  </footer>
 
 </body>
 </html>
